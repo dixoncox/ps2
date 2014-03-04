@@ -6,9 +6,6 @@ updatedMonthlyBalance = balance
 totalPaid = 0
 print
 for i in range (1,13):
-    #balance = balance + balance*annualInterestRate/12.0
-    #minPayment = (balance + balance*annualInterestRate/12.0)*monthlyPaymentRate
-    #balance = balance - minPayment
     minPayment = updatedMonthlyBalance * monthlyPaymentRate
     monthlyUnpaidBalance = updatedMonthlyBalance - minPayment
     updatedMonthlyBalance = monthlyUnpaidBalance + monthlyInterestRate*monthlyUnpaidBalance
