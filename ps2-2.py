@@ -7,9 +7,9 @@ for i in range (1,13):
     #balance = balance + balance*annualInterestRate/12.0
     #minPayment = (balance + balance*annualInterestRate/12.0)*monthlyPaymentRate
     #balance = balance - minPayment
-    minPayment = updatedMonthlyBalance * monthlyInterestRate
+    minPayment = updatedMonthlyBalance * monthlyPaymentRate
     monthlyUnpaidBalance = updatedMonthlyBalance - minPayment
     updatedMonthlyBalance = monthlyUnpaidBalance + monthlyInterestRate*monthlyUnpaidBalance
     print 'Month:',i
-    print 'Minimum monthly payment:', minPayment
-    print 'Remaining balance:', updatedMonthlyBalance
+    print 'Minimum monthly payment:', round(minPayment,2)
+    print 'Remaining balance:', round(updatedMonthlyBalance,2)
