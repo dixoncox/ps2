@@ -8,6 +8,7 @@ finalBalance = balance
 while abs(finalBalance) > 0.10:
     updatedMonthlyBalance = balance    
     print   
+    print 'Payment:',round(payment,2)
     for i in range (1,13):
         monthlyUnpaidBalance = updatedMonthlyBalance - payment
         updatedMonthlyBalance = monthlyUnpaidBalance + (monthlyUnpaidBalance * monthlyInterestRate)
